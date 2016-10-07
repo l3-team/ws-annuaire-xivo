@@ -1,0 +1,3 @@
+uid|civilite|nom|prenom|affectation|role|local|email|telephone
+{% for r in result %}{% for t in r.lille3TelephoneFunction %}{{- r.uid }}|{{ r.supannCivilite }}|{{ r.sn }}|{{ r.givenName }}|{{ t |structureParser }}|{{ t |fonctionParser }}|{{ t |localParser }}|{{ r.mail }}|{{ t |telephoneParser }}
+{% endfor %}{% endfor %}

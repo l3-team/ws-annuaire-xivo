@@ -1,0 +1,5 @@
+l3_xivo_directory:
+    resource: "@L3XivoDirectoryBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

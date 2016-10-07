@@ -1,0 +1,37 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     symfony
+    database_user:     root
+    database_password: ~
+    # You should uncomment this if you want use pdo_sqlite
+    # database_path: "%kernel.root_dir%/data.db3"
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    # A secret key that's used to generate certain security-related tokens
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+# Lille 3 :
+    # Config de la connexion au LDAP pour la recherche :
+    ldap_host: 'ldap.univ-lille3.fr'
+    ldap_port: 389
+    ldap_base_dn: 'dc=univ-lille3,dc=fr'
+    ldap_user: 'usr'
+    ldap_password: 'mdp'
+
+    # Config du nombre minimum de caractères requis pour lancer la recherche
+    nombre_caracteres_min: 3
+
+    # Config des attributs du LDAP sur lesquels la recherche doit s'effectuer.
+    # Attention: Les champs choisis DOIVENT être présents dans l'entitée People !
+    attributs_recherche:
+        - sn
+        - givenName
+        - lille3TelephoneFunction
