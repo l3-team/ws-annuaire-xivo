@@ -2,7 +2,7 @@
     "name": "l3/ws-annuaire-xivo",
     "type": "project",
     "description": "Application Symfony 2.7 provide a directory internal white page with phone numbers for Xivo throw a webservice who returns datas in CSV format",
-    "license": "(c) Copyright Universite Lille3 - Charles de Gaulle",
+    "license": "LGPL-3.0-or-later",
     "authors": [
         {
             "name": "Guillaume Fiéni",
